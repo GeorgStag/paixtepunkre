@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon">
+    <meta charset="UTF-8">
+    <title>Παίχτε Punk Ρεεεε</title>
+	<script src="playlist_punk.js"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7285464470568932"
+     crossorigin="anonymous"></script>
+    <style>
+    body {
+      background-color: #222;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    h1 {
+	  font-family: Arial, sans-serif;
+      font-size: 36px;
+    }
+    
+	.container {
+	  width: 100%;
+	}
+
+	.element1, .element2 {
+	  float: left;
+	  width: 50%;
+	}
+    
+	.player {
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      margin-top: 30px;
+    }
+	
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: lightgrey;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+      background-color: #555;
+    }
+
+    .navbar {
+            background-color: grey;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-radius: 25px;
+        }
+
+	.navbar a {
+		text-decoration: none;
+		color: white;
+		padding: 10px 20px;
+		transition: background-color 0.3s ease;
+	}
+
+	.navbar a:hover {
+		background-color: #555;
+	}
+
+	.slideshow {
+	  max-width: 500px;
+	  margin: 0 auto;
+	  position: relative;
+	  overflow: hidden;
+	  border-radius: 25px;
+	}
+
+	.slide {
+	  display: none;
+	}
+
+	.slide img {
+	  width: 100%;
+	  height: auto;
+
+	}
+
+	.slide.active {
+	  display: block;
+	}
+
+	.prev, .next {
+	  position: absolute;
+	  bottom: 100px;
+	  transform: translateY(-50%);
+	  background-color: white;
+	  color: black;
+	  padding: 10px;
+	  font-size: 20px;
+	  cursor: pointer;
+	}
+
+	.prev {
+	  left: 10px;
+	}
+
+	.next {
+	  right: 10px;
+	}
+  </style>
+</head>
+<body>
+  <div class="container">   <div class="element1"> <h1 align="left"> Παίχτε Punk ρεεε </h1> </div> <div class="element2"> </div> </div>
+  <div class="player">
+	<button class="btn" id="playButton" > &#9654 </button>
+	<button class="btn" id="pauseButton" > &#9724 </button>
+	<button class="btn" id="skipButton" > |&#9654 </button>
+	<button class="btn"  id="volumeButton"> &#128263 </button>
+	<button class="btn" id="reveal" > Reveal Song Name </button>
+  </div>
+  <div align="right"><p id="output"> &#8205 </p> </div>
+  <br>
+  <div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="radios.html">Other Rάδιος</a>
+		<a href="stories.html">Tales from the Crypt</a>
+		<a href="about.html">About</a>
+  </div>
+  <br>   <br>   <br>   <br>   <br>
+  <div align="left">Currently on:</div>
+  <div class="slideshow">
+	<div class="slide active">
+		<img src="punk/parkinsons.jpg" alt="parkinsons" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		 <img src="punk/cat.jpg" alt="kill the cat" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/mx.jpg" alt="methismena xotika" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/ht.jpg" alt="xat trick" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/ht2.jpg" alt="xat trick" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/ht3.jpg" alt="xat trick" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/bm.jpg" alt="bad movies" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/oldred.jpg" alt="oldschool rednex" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		 <img src="punk/beer.jpg" alt="ten beers after" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/erevos.jpg" alt="erevos" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/xasma.jpg" alt="xasma" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/chaos.jpg" alt="genia tou xaous" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/pr1.jpg" alt="panx romana" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/pr2.jpg" alt="panx romana" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<div class="slide">
+		<img src="punk/old1.jpg" alt="old" style="width: 300px; height: 300px; padding: 20px">
+	</div>
+	<a class="prev" onclick="previousSlide()">&#10094;</a>
+	<a class="next" onclick="nextSlide()">&#10095;</a>
+  </div>
+  <p>Athens, 2023</p>
+  <script>
+	var slides = document.querySelectorAll('.slide');
+	var currentSlide = 0;
+
+	function showSlide(n) {
+	  slides[currentSlide].classList.remove('active');
+	  currentSlide = (n + slides.length) % slides.length;
+	  slides[currentSlide].classList.add('active');
+	}
+
+	function nextSlide() {
+	  showSlide(currentSlide + 1);
+	}
+
+	function previousSlide() {
+	  showSlide(currentSlide - 1);
+	}
+
+	setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
