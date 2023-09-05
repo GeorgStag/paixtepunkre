@@ -1,4 +1,4 @@
 # paixtepunkre
-Web Radio based on ftp, html, css and javascript
+Web Radio based on FTP, html, CSS and JavaScript
 
 Link: https://paixtepunk.re/
